@@ -90,3 +90,5 @@ This class is equivalent as tf.keras.layers.SimpleRNNCell, and will be replaced 
 EARLY STOPPING
 elapsed_time:1.85887598991[sec]
 elapsed_time:0.318495988846[sec]
+
+<img src="sinwave-rnn.png">
