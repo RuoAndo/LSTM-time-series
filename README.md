@@ -1,8 +1,9 @@
-# nii-socs-dl-timeseries
+# nii-socs-dl-timeseries 
 
 # Usage
 
 <pre>
+# pip install tensorflow
 # g++ gen_sin_noised.cpp
 # ./a.out
 </pre>
