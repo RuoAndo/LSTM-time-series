@@ -2,7 +2,7 @@
 
 # Quick test
 
-(Please manage to run tensorflow in your computer...)
+(Please manage to run tensorflow in your computer)
 <pre>
 # pip install tensorflow
 # g++ gen_sin_noised.cpp
