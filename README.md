@@ -95,6 +95,6 @@ elapsed_time:1.85887598991[sec]
 elapsed_time:0.318495988846[sec]
 </pre>
 
-Matplptlib is required to show this plot.
+Matplotlib is required to show this plot.
 
 <img src="sinwave-rnn.png">
