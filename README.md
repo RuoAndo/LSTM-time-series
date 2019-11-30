@@ -20,6 +20,8 @@ random data is written to random_data_sin.txt
 "2019/07/02 00:00:27.716",1.48175
 </pre>
 
+<img src="sample_plot.png">
+
 <pre>
 # python rnn.py random_data_sin.txt
 </pre>
