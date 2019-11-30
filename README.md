@@ -11,6 +11,15 @@
 random data is written to random_data_sin.txt
 
 <pre>
+# head -n 5 random_data_sin.txt
+"2019/07/02 00:00:00.487",1
+"2019/07/02 00:00:00.595",0.125333
+"2019/07/02 00:00:12.793",1.24869
+"2019/07/02 00:00:19.047",1.36812
+"2019/07/02 00:00:27.716",1.48175
+</pre>
+
+<pre>
 # python rnn.py random_data_sin.txt
 </pre>
 
