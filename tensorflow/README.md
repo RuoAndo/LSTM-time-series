@@ -1,3 +1,4 @@
+# LSTM(Long Short-Term Memory) for time-series 
 
 <pre>
 # g++ gen_sin_noised.cpp
