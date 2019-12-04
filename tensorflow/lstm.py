@@ -114,6 +114,7 @@ if __name__ == '__main__':
         tmp_item = line.split(",")
 
         f.append(float(tmp_item[1]))
+        line_counter = line_counter + 1
         
     print f
       
@@ -121,7 +122,9 @@ if __name__ == '__main__':
 
     f = standardization_p(f)
 
-    T = 118
+    # T = 118
+    
+    T = line_counter - 2
     length_of_sequences = T
     maxlen = 60 
     epochs = 500
