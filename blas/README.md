@@ -1,6 +1,18 @@
 # cublasSgemv
 
 <pre>
+cublasStatus_t cublasSgemv(cublasHandle_t handle, cublasOperation_t trans,
+                           int m, int n,
+                           const float           *alpha,
+                           const float           *A, int lda,
+                           const float           *x, int incx,
+                           const float           *beta,
+                           float           *y, int incy)
+</pre>
+
+y = α op ( A ) x + β y
+
+<pre>
  66    int M = 100;
  67    int N = 5;
  
