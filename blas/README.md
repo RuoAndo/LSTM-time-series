@@ -41,7 +41,6 @@ y = α op ( A ) x + β y
 elapsed time = 0.681640245 sec
 </pre>
 
-<h2 id="example"></h2>
 # cublasSgemm
 
 <pre>
