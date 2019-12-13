@@ -41,7 +41,84 @@ y = α op ( A ) x + β y
 elapsed time = 0.681640245 sec
 </pre>
 
-# cublasSgemv
+# cublasSgemm
+
+<pre>
+cublasStatus_t cublasSgemm(cublasHandle_t handle,
+                           cublasOperation_t transa, cublasOperation_t transb,
+                           int m, int n, int k,
+                           const float           *alpha,
+                           const float           *A, int lda,
+                           const float           *B, int ldb,
+                           const float           *beta,
+                           float           *C, int ldc)
+</pre>
+
+<pre>
+C = α op ( A ) op ( B ) + β C
+</pre>
+
+<pre>
+8 int const A_ROW = 5;
+9 int const A_COL = 6;
+10 int const B_ROW = 6;
+11 int const B_COL = 7;       
+</pre>
+
+<pre>
+  float a = 1, b = 0;
+  cublasSgemm(
+          handle,
+          CUBLAS_OP_T,   
+          CUBLAS_OP_T,  
+          A_ROW,   // 5
+          B_COL,   // 6      
+          A_COL,   // 5      
+          &a,           
+          d_A,          
+          A_COL,   // 5      
+          d_B,          
+          B_COL,   // 6     
+          &b,           
+          d_C,     // 7     
+          A_ROW         
+  );
+</pre>
+
+<pre>
+cublasStatus_t cublasSgemm(cublasHandle_t handle,
+                           cublasOperation_t transa, cublasOperation_t transb,
+                           int m, int n, int k,
+                           const float           *alpha,
+                           const float           *A, int lda,
+                           const float           *B, int ldb,
+                           const float           *beta,
+                           float           *C, int ldc)
+
+C = α op ( A ) op ( B ) + β C
+
+handle: handle to the cuBLAS library context.
+
+transa: operation op(A) that is non- or (conj.) transpose.
+transb: operation op(B) that is non- or (conj.) transpose.
+
+m: number of rows of matrix op(A) and C.
+n: number of columns of matrix op(B) and C.
+
+k: number of columns of op(A) and rows of op(B).
+
+alpha: scalar used for multiplication.
+A: array of dimensions lda x k with lda>=max(1,m) if transa == CUBLAS_OP_N and lda x m with lda>=max(1,k) otherwise.
+
+lda: leading dimension of two-dimensional array used to store the matrix A.
+B: array of dimension ldb x n with ldb>=max(1,k) if transb == CUBLAS_OP_N and ldb x k with ldb>=max(1,n) otherwise.
+
+ldb: leading dimension of two-dimensional array used to store matrix B.
+beta: scalar used for multiplication. If beta==0, C does not have to be a valid input.
+
+C: rray of dimensions ldc x n with ldc>=max(1,m).
+ldc: leading dimension of a two-dimensional array used to store the matrix C.
+</pre>
 
 <pre>
 # ./a.out
