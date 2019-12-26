@@ -1,4 +1,4 @@
-# sin wave with some noise
+# sin wave (with some noise)
 <pre>
 amplitude: 1
 sampling frequency: 8800
