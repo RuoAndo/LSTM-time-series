@@ -147,3 +147,36 @@ A*B :row 5:col 7
 181 135 188 169 176 215 130
 </pre>
 
+# comparison
+
+<pre>
+sgemm (simple)
+openblas sgemm (cblas)
+cublas sgemm (cublas)
+</pre>
+
+<pre>
+# ./build-sgemm.sh sgemm_cuda_2
+
+# time ./sgemm_cuda_2
+testing sgemm... with 1000 size
+[CPU] (simple) 3.016999592 sec
+[CPU] (cblas) 0.004811303 sec
+[GPU](cublas) 0.006010615 sec
+simpleCUBLAS test passed.
+
+real    0m3.791s
+user    0m8.136s
+sys     0m5.882s
+
+# time ./sgemm_cuda_2
+testing sgemm... with 2000 size
+[CPU] (simple) 31.989784236 sec
+[CPU] (cblas) 0.020903704 sec
+[GPU](cublas) 0.013707594 sec
+simpleCUBLAS test passed.
+
+real    0m32.970s
+user    0m38.390s
+sys     0m6.601s
+</pre>
