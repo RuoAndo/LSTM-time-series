@@ -1,6 +1,6 @@
 # nii-socs-dl-timeseries 
 
-<img src="tree.jpg" width=50%>
+<img src="tree.jpg" width=30%>
 
 # Quick test with Python
 
