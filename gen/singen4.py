@@ -19,6 +19,8 @@ fs_default = 125
 def test():
     sine_wave = make_sine(F_default, A_default, fs_default)
 
+    print len(sine_wave)
+    
     fig = pl.figure()
     fig.add_subplot(111)
     pl.plot(sine_wave)
