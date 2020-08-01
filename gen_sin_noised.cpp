@@ -187,8 +187,8 @@ int main( int argc, char* argv[] )
 
     float tmp = sin_raw_data[i];
     
-    // tmp = tmp + (float)GetRandom(-1,1);
-    tmp = tmp + (float)GetRandom(-0.1,0.1);
+    tmp = tmp + (float)GetRandom(-1,1);
+    // tmp = tmp + (float)GetRandom(-0.1,0.1);
     outputfile << tmp;
     
     // outputfile << "," << GetRandom(1,65535);
