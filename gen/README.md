@@ -15,4 +15,4 @@ A_default = 1
 fs_default = 125
 </pre>
 
-<img src="sin4y.png"> 
+<img src="sin4.png"> 
