@@ -1,6 +1,7 @@
 """ Inspired by example from
 https://github.com/Vict0rSch/deep_learning/tree/master/keras/recurrent
 Uses the TensorFlow backend
+
 The basic idea is to detect anomalies in a time-series.
 """
 import matplotlib.pyplot as plt
@@ -175,7 +176,7 @@ def run_network(model=None, data=None):
     try:
         plt.figure(1)
         plt.subplot(311)
-        plt.title("Actual Test Signal w/Anomalies")
+        plt.title("Synthesized waves")
         plt.plot(y_test[:len(y_test)], 'b')
         plt.subplot(312)
         plt.title("Predicted Signal")
