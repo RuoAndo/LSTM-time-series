@@ -2,3 +2,15 @@
  2013  cat tmp | cut -d "," -f1 > tmp2
  2014  paste -d "," tmp2 out.txt 
  2015  paste -d "," tmp2 out.txt > tmp3
+
+ 2174  python anomaly-2800.py tmp
+ 2175  wc -l out.txt 
+ 2176  tail -n 1300 2.csv > tmp2
+ 2177  paste -d "," tmp2 out.txt > tmp3
+ 2178  python 6.py tmp3
+ 2179  more out.txt 
+ 2180  cat 2.csv | tail -n 1300 | cut -d "," -f1
+ 2181  cat 2.csv | tail -n 1300 | cut -d "," -f1 > tmp-date
+ 2182  paste -d "," tmp-date out.txt > tmp3
+ 2183  python 6.py tmp3
+
