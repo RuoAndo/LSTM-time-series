@@ -4,7 +4,7 @@ import sys
 
 counter = 0
 counter2 = 0
-with open('1.csv') as f:
+with open(sys.argv[1]) as f:
     reader = csv.reader(f)
 
     for row in reader:
