@@ -1,0 +1,4 @@
+ 2012  cat tmp | cut -d "," -f1
+ 2013  cat tmp | cut -d "," -f1 > tmp2
+ 2014  paste -d "," tmp2 out.txt 
+ 2015  paste -d "," tmp2 out.txt > tmp3
