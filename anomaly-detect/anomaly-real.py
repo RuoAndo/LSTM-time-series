@@ -195,6 +195,18 @@ def run_network(model=None, data=None):
         plt.title("Squared Error")
         mse = ((y_test - predicted) ** 2)
         plt.plot(mse, 'r')
+
+        ###
+        wfile = open("out.txt", "w")
+
+        counter = 0
+        for i in y_test:
+            wfile.writelines(str(y_test[counter])+","+str(predicted[counter])+","+str(mse[counter])+"\n")            
+            counter = counter + 1
+
+        wfile.close()
+        ###
+        
         plt.show()
     except Exception as e:
         print("plotting exception")
