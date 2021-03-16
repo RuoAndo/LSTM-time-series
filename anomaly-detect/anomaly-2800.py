@@ -184,15 +184,16 @@ def run_network(model=None, data=None):
         return model, y_test, 0
 
     try:
+        plt.subplots_adjust(wspace=0.4, hspace=0.6)
         plt.figure(1)
         plt.subplot(311)
-        plt.title("Synthesized waves")
+        plt.title("Real traffic")
         plt.plot(y_test[:len(y_test)], 'b')
         plt.subplot(312)
-        plt.title("Predicted Signal")
+        plt.title("Predicted")
         plt.plot(predicted[:len(y_test)], 'g')
         plt.subplot(313)
-        plt.title("Squared Error")
+        plt.title("Mean Squared Error")
         mse = ((y_test - predicted) ** 2)
         plt.plot(mse, 'r')
 
