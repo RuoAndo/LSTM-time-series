@@ -1,4 +1,5 @@
-82;1;0c# python date_plot_2.py 1.csv
+# python date_plot_2.py 1.csv
+
 <img src="1.png">
 
 #
