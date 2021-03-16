@@ -12,5 +12,8 @@
 
 <pre>
 # cat 1.csv | cut -d "," -f 2 | sed '1d' > sample.txt
-</pre>
+# python anomaly-2800.py 
+<pre>
+
+<img src="out.1.png">
 
