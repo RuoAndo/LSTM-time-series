@@ -13,9 +13,9 @@ data_set = np.loadtxt(
 for data in data_set:
     plt.scatter(data[0], data[1])
 
-plt.title("correlation")
-plt.xlabel("Average Temperature of SAITAMA")
-plt.ylabel("Average Temperature of IWATE")
+plt.title("sourceIP,sourcePort,destIP,destPort")
+plt.xlabel("counts")
+plt.ylabel("bytes")
 plt.grid()
 
 plt.show()
