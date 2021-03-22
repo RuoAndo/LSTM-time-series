@@ -7,4 +7,4 @@ paste tmp10 tmp12 -d "," > tmp13
 python 3.py tmp13
 </pre>
 
-<img src=3.png>
+<img src=3d.png>
