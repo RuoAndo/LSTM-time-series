@@ -1,8 +1,9 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import sys
 
 data_set = np.loadtxt(
-    fname="1.csv",
+    fname=sys.argv[1],
     dtype="float",
     delimiter=",",
 )
