@@ -33,7 +33,15 @@ fig = plt.figure()
 ax = Axes3D(fig)
  
 ax.scatter(x, y, c='b')
- 
+
+plt.title("sourceIP,sourcePort,destIP,destPort")
+
+ax.set_xlabel("bytes")
+ax.set_ylabel("bytes_sent")
+ax.set_zlabel("bytes_received")
+#plt.zlabel("bytes_sent")
+plt.grid()
+
 plt.show()
 
 #plt.scatter(scipy.stats.zscore(a), scipy.stats.zscore(b),)
