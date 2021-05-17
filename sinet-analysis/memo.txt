@@ -1,0 +1,7 @@
+Extracting diurnal pattern by state-space model.
+
+SINETは学術基盤ネットワークである。
+
+外向きのトラフィックにはパターンがある。
+
+周期のあるトラフィックを、カルマンフィルタと隠れマルコフモデルで検出した。
