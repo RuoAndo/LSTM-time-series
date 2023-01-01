@@ -1,0 +1,2 @@
+# g++ fibo_comp.c  -std=c++0x
+
